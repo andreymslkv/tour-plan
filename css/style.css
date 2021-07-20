@@ -378,13 +378,13 @@ template {
   padding-bottom: 40px;
 }
 
+.header-top__menu-button {
+  display: none;
+}
+
 .header__search {
   margin-right: auto;
   margin-left: 108px;
-}
-
-.header__menu-btn {
-  display: none;
 }
 
 .logo {
@@ -495,7 +495,9 @@ template {
   }
   .header__search {
     margin-left: auto;
-    max-width: 340px;
+  }
+  .search__input {
+    width: 340px;
   }
   .header-menu {
     padding-top: 22px;
@@ -518,6 +520,7 @@ template {
   .menu-button {
     width: 16px;
     height: 11px;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
