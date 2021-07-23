@@ -1,0 +1,90 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    margin-bottom: 70px
+    font-weight: 600
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      width: 730px
+      padding: 0 62px 30px
+      margin: 45px auto 0
+      background-color: #ffffff
+      border-radius: 8px
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 13
+        width: 70px
+        height: 47px
+        background-image: url(../images/icons/quote-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        right: 62px
+        top: 118px
+        width: 70px
+        height: 47px
+        background-image: url(../images/icons/quote-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+      border: none
+      cursor: pointer
+      z-index: 99
+      &--prev
+        background-image: url(../images/arrow-prev-secondary.svg)
+        left: 0
+      &--next
+        background-image: url(../images/arrow-next-secondary.svg)
+        right: 0
+    &__profile
+      display: flex
+      flex-direction: column
+      margin-top: -45px
+      margin-bottom: 30px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+    &__date
+      margin-bottom: 4px
+      font-weight: 400
+      font-size: 10px
+      line-height: 13px
+    &__rating
+      display: flex
+      align-items: center
+      margin-bottom: 33px
+    &__text
+      max-width: 537px
+      margin: auto
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
