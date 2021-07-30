@@ -92,12 +92,38 @@
         grid-column: span 5
 
 @media (max-width: 768px)
+  body
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
   .header
-    &__search, &-menu, &__user
+    &__user, &__search
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+    &__nav
       display: none
+      position: fixed
+      top: 78px
+      right: 0
+      bottom: 0
+      left: 0
+      &--visible
+        display: block
+    &__mobile
+      &--fixed
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99
   .menu
     &-button
       width: 16px

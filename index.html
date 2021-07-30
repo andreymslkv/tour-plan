@@ -15,21 +15,21 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header__mobile--fixed">
     <div class="container">
       <div class="header-top">
         <a class="logo" href="#">
           <img class="logo__image" src="./images/logo.svg" alt="Logo: Best Tour Plan">
         </a>
 
-        <form class="search header__search" action="#">
+        <form class="search header__search header__search--mobile--hidden" action="#">
           <input class="search__input" type="text" placeholder="Search Location">
           <button class="search__button">
             <img src="./images/icons/search.svg" alt="icon: search">
           </button>
         </form>
 
-        <a class="user header__user" href="#">
+        <a class="user header__user header__user--mobile--hidden" href="#">
           <img class="user__avatar" src="./images/avatar.jpg" alt="user photo">
           <span class="user__name">Nathan</span>
         </a>
@@ -46,6 +46,20 @@
     <nav class="header__nav">
       <div class="container">
         <ul class="header-menu">
+          <li class="header-menu__item header-menu__item--mobile--visible">
+            <a class="user header__user" href="#">
+              <img class="user__avatar" src="./images/avatar.jpg" alt="user photo">
+              <span class="user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="header-menu__item header-menu__item--mobile--visible">
+            <form class="search header__search" action="#">
+              <input class="search__input" type="text" placeholder="Search Location">
+              <button class="search__button">
+                <img src="./images/icons/search.svg" alt="icon: search">
+              </button>
+            </form>
+          </li>
           <li class="header-menu__item">
             <a href="#" class="header-menu__link">All Deals</a>
           </li>
